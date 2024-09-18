@@ -5,20 +5,20 @@ const Evento2 = () => {
   const [CtState, dispatch] = useContext(CtContext);
     const handleClick = (e) => {
         console.log(e);
-        alert("Nosso site usa cookies para melhorar a navegação, clique em ok para aceitar e continuar.")}
+        alert("contato:(61)9 9876-0345")}
 
-        const callNames = () => {alert("Testando")}
+        const callNames = () => {alert("Aperte o botão abaixo para acessar a lista de alguns alunos de ads, feita em ordem númerica e em ordem alfabetica.")}
            
        
   return (
     <div>
     
-    <button onClick={() => alert("Nosso site usa cookies para melhorar a navegação, clique em ok para aceitar e continuar.")}>
-        Política de privacidade
+    <button onClick={() => alert("Nosso site usa cookies para melhorar a navegação, clique no botão para aceitar e continuar.")}>
+       Cookies
     </button>
    
-        <div><button onClick = {handleClick}>Aceitar Cookies</button></div>
-        <div><button onClick = {callNames}> Clique com Função</button></div>
+        <div><button onClick = {handleClick}>Entre em Contato</button></div>
+        <div><button onClick = {callNames}> Sobre</button></div>
         <div><button onClick={() => dispatch({ type: "START_STAGE" })}>Lista!</button></div>
     </div>
   )
